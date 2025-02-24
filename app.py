@@ -59,6 +59,6 @@ db_connection_str = f'mysql+mysqlconnector://{db_user}:{db_password}@{db_host}:{
 engine = create_engine(db_connection_str)
 
 # Load data into the SQL database
-customer_clean.to_sql('CUSTOMERS', engine, if_exists='replace', index=False)
-order_clean.to_sql('ORDERS', engine, if_exists='replace', index=False)
-seat_df.to_sql('SEATS', engine, if_exists='replace', index=False)
+customer_clean.to_sql('CUSTOMERS', engine, if_exists='append')
+order_clean.to_sql('ORDERS', engine, if_exists='append')
+seat_df.to_sql('SEATS', engine, if_exists='append')
