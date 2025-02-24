@@ -5,7 +5,7 @@ This project covers a simple ETL and data warehouse solution for sales data. Thr
 
   1) SQL schema
      This includes creation of three tables with fixed schema and defined index for optimal query performance. Also, a consolidated
-     view that aggrigates the three tables into a single table for reporting and analysis.
+     view that aggregates the three tables into a single table for reporting and analysis.
   2) ETL .py file
      a) extraction/ingestion from 3 .csv files (os and pandas)
      b) transformation/data cleaning (pandas)
